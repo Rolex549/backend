@@ -14,5 +14,4 @@ def predict_route():
     prediction = predict(text, model, vectorizer)
     return jsonify({'prediction': prediction})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# REMOVE app.run() for Vercel
